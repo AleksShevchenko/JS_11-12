@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta charset="utf-8">
+        <title>Templating</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+
+  </head>
+  <body>
+  
+    <script type="text/template" id="info">
+      
+      <div class="block">
+
+    <h1><%= title%></h1>
+  
+  <div class="foto">
+  <img src="<%= photo.src %>" alt="<%= photo.alt %>" />
+  </div>
+  
+    <p ><%= basicActivity%></p>
+  
+  <div class="line"> </div>
+   
+  <p><%= whyFrontend%></p>
+      <ul>
+        <li><%= reason1%></li>
+        <li><%= reason2%></li>
+        <li><%= reason3%></li>
+      </ul>
+    
+
+  <div class="line"> </div>
+  
+    <p><%= myPhone%><br/><%= phoneNumber%></p>
+  
+    <p><%= myFb%><br/><a href="<%= fbLink%>"><%= fbLinkTitle%></a></p>
+
+  <div class="line"> </div>
+   
+    <p><%= feedback%><br/><%= myFeedback%></p>
+
+  </div>
+
+    </script>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/tmpl.js"></script>
+    <script src="js/script.js"></script>
+    
+
+  </body>
+</html>
